@@ -1,0 +1,5 @@
+<TextView
+android:id="@+id/msg" 
+android:text="Aguarde Iniciando Aplicacao"
+xmlns:android="http://schemas.android.com/apk/res/android">
+</TextView>

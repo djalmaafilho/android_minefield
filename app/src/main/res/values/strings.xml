@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, PrincipalActivity!</string>
+    <string name="app_name">Campo Minado</string>
+    <string name="msg_inicio">Aguarde, carregando aplicação...</string>
+    <string name="desenvolvedor">Android Campo Minado. Por: Djalma Passos</string>
+    <string name="bombas">bombas</string>
+    <string name="tempo">tempo</string>
+    <string name="vitoria">VITORIA</string>
+    <string name="nomeJogodor">Nome</string>
+    <string name="botaoSalvar">SALVAR</string>
+    <string name="botaoListar">RECORDES</string>
+    <string name="botatoInicio">JOGAR</string>
+</resources>
