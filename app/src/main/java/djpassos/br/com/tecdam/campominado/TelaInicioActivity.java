@@ -17,19 +17,25 @@ public class TelaInicioActivity extends Activity implements OnClickListener{
 		setContentView(R.layout.telainicio);
 		
 		((Button)findViewById(R.id.button1)).setOnClickListener(this);
+        ((Button)findViewById(R.id.buttonRecordes)).setOnClickListener(this);
 	}
 
 	@Override
 	public void onClick(View v) {
-		Intent it = new Intent(this, CampoMinadoActivity.class);
-		startActivity(it);
-		Fachada.getInstancia();
+        if(v.getId() == R.id.button1){
+            Intent it = new Intent(this, CampoMinadoActivity.class);
+            startActivity(it);
+            Fachada.getInstancia();
+
+        }else{
+            Intent it = new Intent(this, RecordesActivity.class);
+            startActivity(it);
+        }
 	}
 	
 	@Override
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-		Fachada.finalizarFachada();
 	}
 }

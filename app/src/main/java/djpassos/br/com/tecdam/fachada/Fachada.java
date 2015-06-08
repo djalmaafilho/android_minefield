@@ -23,7 +23,6 @@ public class Fachada {
 	private ControleRelogio controleRelogio;
 
 	private Fachada() {
-		iniciarControles();
 	}
 
 	private void iniciarControles() {
@@ -118,9 +117,7 @@ public class Fachada {
 	/**
 	 * Metodo rsponsavel por tirar a instancia atual da Fachada da memoria.
 	 */
-	public static void finalizarFachada() {
-		if (fachada != null) {
-			fachada = null;
-		}
+	public void iniciar() {
+		iniciarControles();
 	}
 }

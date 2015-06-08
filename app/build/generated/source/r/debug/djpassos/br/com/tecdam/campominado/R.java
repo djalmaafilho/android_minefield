@@ -37,7 +37,9 @@ public final class R {
     }
     public static final class id {
         public static final int button1=0x7f05000d;
-        public static final int button2=0x7f05000e;
+        public static final int buttonRecordes=0x7f05000e;
+        public static final int buttonSalvar=0x7f050012;
+        public static final int editTextNome=0x7f050010;
         public static final int gameView1=0x7f05000b;
         public static final int imageButton1=0x7f050006;
         public static final int imageView1=0x7f05000c;
@@ -47,11 +49,14 @@ public final class R {
         public static final int linearLayout4=0x7f050002;
         public static final int linearLayout5=0x7f050007;
         public static final int linearLayout6=0x7f050005;
-        public static final int msg=0x7f05000f;
+        public static final int listViewRecordes=0x7f050013;
+        public static final int msg=0x7f050014;
         public static final int textView1=0x7f050008;
         public static final int textView2=0x7f050003;
         public static final int textView3=0x7f050009;
         public static final int textView4=0x7f050004;
+        public static final int textViewNome=0x7f05000f;
+        public static final int textViewTempo=0x7f050011;
     }
     public static final class layout {
         public static final int main=0x7f030000;
@@ -72,10 +77,5 @@ public final class R {
         public static final int nomeJogodor=0x7f040008;
         public static final int tempo=0x7f040009;
         public static final int vitoria=0x7f04000a;
-    }
-    public static final class telaRecordes {
-        public static final int editText1=0x7f060001;
-        public static final int textView1=0x7f060000;
-        public static final int textView2=0x7f060002;
     }
 }

@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
 import djpassos.br.com.tecdam.entidades.Casa;
 import djpassos.br.com.tecdam.entidades.ControleCasa;
 import djpassos.br.com.tecdam.fachada.Fachada;
@@ -28,7 +27,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 /*
- * Classe responsavel de desenhar na tela da aplica��o
+ * Classe responsavel de desenhar na tela da aplicacao
  */
 public class GameView extends View {
 	
@@ -340,8 +339,8 @@ public class GameView extends View {
 
 	
 	public static void reiniciar() {
-		Fachada.finalizarFachada();
-		
+		Fachada.getInstancia().iniciar();
+
 		for (int i = 0; i < casaInicio.length; i++) {
 			casaInicio[i] = instancia.getResources().getDrawable(
 					R.drawable.casainicio);

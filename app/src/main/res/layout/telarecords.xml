@@ -4,13 +4,13 @@
 	android:orientation="vertical"
 	xmlns:android="http://schemas.android.com/apk/res/android">
 	<TextView
-		android:id="@+telaRecordes/textView1"
+		android:id="@+id/textViewNome"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="@string/nomeJogodor"></TextView>
 	<EditText
 		android:layout_height="wrap_content"
-		android:id="@+telaRecordes/editText1"
+		android:id="@+id/editTextNome"
 		android:layout_width="fill_parent"></EditText>
 	<LinearLayout
 		android:layout_height="wrap_content"
@@ -21,13 +21,13 @@
 			android:layout_height="wrap_content"
 			android:text="@string/tempo"
 			android:layout_width="wrap_content"
-			android:id="@+id/textView1"></TextView>
+			android:id="@+id/textViewTempo"></TextView>
 		<TextView
 			android:layout_weight="1"
 			android:layout_height="wrap_content"
 			android:text="99:99"
 			android:layout_width="wrap_content"
-			android:id="@+telaRecordes/textView2"></TextView>
+			android:id="@+id/textView2"></TextView>
 	</LinearLayout>
 	<LinearLayout
 		android:layout_height="wrap_content"
@@ -40,12 +40,10 @@
 			android:layout_height="wrap_content"
 			android:layout_width="wrap_content"
 			android:text="@string/botaoSalvar"
-			android:id="@+id/button1"></Button>
-		<Button
-			android:layout_weight="1"
-			android:text="@string/botaoListar"
-			android:id="@+id/button2"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"></Button>
+			android:id="@+id/buttonSalvar"></Button>
 	</LinearLayout>
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewRecordes"></ListView>
 </LinearLayout>

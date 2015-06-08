@@ -88,7 +88,7 @@ public class ControleCasa {
 		return bombas;
 	}
 
-	// Ordena o vetor de casas que serão bomba por linha coluna
+	// Ordena o vetor de casas que serao bomba por linha coluna
 	private void ordenaVetorBombas(int[] bombas) {
 		boolean ordenado = false;
 		boolean trocou = false;

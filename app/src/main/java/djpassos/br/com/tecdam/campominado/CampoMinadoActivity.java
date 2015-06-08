@@ -1,34 +1,18 @@
 package djpassos.br.com.tecdam.campominado;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 import djpassos.br.com.tecdam.fachada.Fachada;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.Configuration;
-import android.database.CrossProcessCursor;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Handler.Callback;
-import android.os.Message;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Button;
-import android.widget.Chronometer;
-import android.widget.DigitalClock;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class CampoMinadoActivity extends Activity implements OnClickListener,
 		GameViewEventoListener, Runnable {
-	private CampoMinadoActivity instancia;
 	public static final long TEMPO = (1000);
 	protected static final int ATUALIZAR_RELOGIO = 0;
 	private GameView gameView;
@@ -41,8 +25,9 @@ public class CampoMinadoActivity extends Activity implements OnClickListener,
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+        Fachada.getInstancia().iniciar();
+
 		setContentView(R.layout.main);
-		instancia = this;
 
 		GameView gameView = (GameView) findViewById(R.id.gameView1);
 		gameView.addGameViewListener(this);

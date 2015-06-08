@@ -84,7 +84,7 @@ public class Casa implements Comparable<Casa> {
 
 	/*
 	 * Perimite a ordenacao de um List de Casas atraves de um parametro de
-	 * ordenação predefinido , no caso o escolhido foi linha e coluna
+	 * ordenacao predefinido , no caso o escolhido foi linha e coluna
 	 * (non-Javadoc)
 	 * 
 	 * @see java.lang.Comparable#compareTo(java.lang.Object)
